@@ -1,11 +1,14 @@
 // ==UserScript==
-// @name         Автоматическая установка продажи до окончания мероприятия
-// @namespace    http://tampermonkey.net/
-// @version      2024-06-24
-// @description  try to take over the world!
-// @author       You
+// @name         sales-duration
+// @namespace    user7237
+// @version      0.1
+// @author       user7237
+// @description  Автоматическая установка продажи до окончания мероприятия
 // @match        https://kras.kassy.ru/admin/event/*
 // @icon         https://kras.kassy.ru/favicon-32x32.png
+// @updateURL    https://github.com/user7237/userscripts/raw/master/sales-duration.js
+// @downloadURL  https://github.com/user7237/userscripts/raw/master/sales-duration.js
+// @license      MIT
 // @grant        none
 // ==/UserScript==
 
