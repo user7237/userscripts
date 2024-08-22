@@ -70,5 +70,21 @@
             console.log('updating places');
             updatePlaces();
         }
+        if (e.code === 'NumpadEnter') {
+            console.log('opening event');
+            // "/admin/event/3-26983408/"
+            if (location.href.match("/admin/ts/[0-9]+/repertuar/[0-9]+/")) {
+                const sp = location.href.split('/');
+                sp[4] = 'event';
+                // sp[6] = '-';
+                sp[5] = `${sp[5]}-${sp[7]}`;
+                sp.pop();
+                sp.pop();
+                sp.pop();
+                let link = sp.join('/');
+                console.log(`going to ${link}`);
+                location.href = link;
+            }
+        }
     });
 })();
