@@ -4,7 +4,9 @@
 // @version      0.1
 // @author       user7237
 // @description  Автоматическая установка продажи до окончания мероприятия
-// @match        https://kras.kassy.ru/admin/*
+// @match        https://krasbilet.ru/admin/*
+// @match        https://*.krasbilet.ru/admin/*
+// @match        https://*.kassy.ru/admin/*
 // @icon         https://kras.kassy.ru/favicon-32x32.png
 // @updateURL    https://github.com/user7237/userscripts/raw/master/sales-duration.js
 // @downloadURL  https://github.com/user7237/userscripts/raw/master/sales-duration.js
@@ -72,11 +74,10 @@
         }
         if (e.code === 'NumpadEnter') {
             console.log('opening event');
-            // "/admin/event/3-26983408/"
             if (location.href.match("/admin/ts/[0-9]+/repertuar/[0-9]+/")) {
                 const sp = location.href.split('/');
+                // "/admin/event/3-26983408/"
                 sp[4] = 'event';
-                // sp[6] = '-';
                 sp[5] = `${sp[5]}-${sp[7]}`;
                 sp.pop();
                 sp.pop();
