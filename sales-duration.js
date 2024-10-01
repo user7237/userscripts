@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         sales-duration
 // @namespace    user7237
-// @version      0.1
+// @version      0.2
 // @author       user7237
 // @description  Автоматическая установка продажи до окончания мероприятия
 // @match        https://krasbilet.ru/admin/*
